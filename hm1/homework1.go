@@ -30,5 +30,9 @@ func main () {
 	size := 14
 	color := "\033[31m"
 	char := 'B'
-	sandglass(size, char, color)
+	if size >= 5 {
+		sandglass(size, char, color)
+	} else {
+		fmt.Println("Слишком маленькая высота")
+	}
 }
